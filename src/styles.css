@@ -1,0 +1,378 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Fonts */
+
+/* Instrument Sans */
+
+.instrument-sans-semibold {
+  font-family: "Instrument Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/* Inter */
+
+.inter-medium {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-style: normal;
+}
+
+.inter-normal {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* index.html */
+
+/* header */
+
+.header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(8px);
+    z-index: 10;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    margin-left: 20px;
+    width: 80px;
+    height: auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li > a {
+    float: left;
+    text-decoration: none;
+    color: #333;
+}
+
+ul, li {
+    display: flex;
+    margin: 10px;
+    margin-right: 25px;
+}
+
+#nav-ctr {
+    width: 100%;
+}
+
+/* Main */
+
+.hero-section {
+  top: 0;
+  background-image: url('./static/images/backgrounds/landing_page/family-with-little-daughter-together-autumnal-weather-having-fun.jpg');
+  height: 100dvh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.hero-btn.section3-btn.btn {
+  margin-left: 20px;
+  background-color: white;
+}
+
+.hero-txt-btn {
+  color: black;
+  font-size: 18px;
+}
+
+.hero-container {
+  position: relative;
+  width: 80dvh;
+  height: 80dvh;
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+  margin-top: 100px;
+}
+
+.hero-container > * {
+  margin: 20px;
+  color: white;
+}
+
+/* Section 2 */
+
+.section2 {
+  height: 100dvh;
+  width: 100dvw;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  text-align: center;
+  font-size: 24px;
+  margin: 45px;
+}
+
+.title-desktop {
+  font-size: 70px;
+  justify-content: center;
+}
+
+#s2-cards-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 274px;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+}
+
+#s2-cards-background {
+  height: 274px;
+  width: 75vw;
+  background: linear-gradient(to right, #b7b7b7 0%, #ffffff 100%);
+  border-radius: 13px;
+  z-index: 2;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.s2-card {
+  width: 18vw;
+  height: 100%;
+  border-radius: 13px;
+  position: relative;
+  margin-right: 45px;
+  z-index: 3;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+
+.s2-card-title {
+  position: absolute;
+  top: 3.5%;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 19px;
+}
+
+.s2-card-image {
+  width: 100%;
+  height: 229px;
+  border-radius: 13px;
+  object-fit: cover;
+}
+
+/* Section 3 */
+
+.section3 {
+  height: 100vh;
+  width: 100vw;
+  background-color: #d9d9d9;
+  display: flex;
+  justify-content: center;
+}
+
+.page-shell {
+  width: 63%;
+  height: 100vh;
+}
+
+.section3-content {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template: 70px 240px 1fr 70px / 1fr;
+  grid-template-areas: "header"
+  "title"
+  "content"
+  "footer"
+}
+
+.item {
+  background-color: #d9d9d9;
+}
+
+.item-1 {
+  grid-area: header;
+}
+
+.item-2 {
+  background-color: initial;
+  grid-area: title;
+  display: flex;
+  align-items: flex-end;
+  font-size: 70px;
+  margin-left: 45px;
+  padding-bottom: 30px;
+}
+
+.item-3 {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  background-color: rgb(255, 255, 255);
+  border: 0.5px solid rgba(0, 0, 0, 0.3);
+  border-radius: 13px;
+  width: 100%;
+  position: relative;
+  padding: 0px 0px;
+}
+
+.item-3-left {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+}
+
+.item-3-left-up {
+  height: 50%;
+  width: 100%;
+}
+
+.item-3-left-up > p {
+  text-align: left;
+  margin-left: 45px;
+}
+
+.item-3-left-down {
+  height: 50%;
+  z-index: 1000;
+}
+
+.item-3-right {
+  height: 100%;
+  width: 50%;
+  position: relative;
+  overflow: visible;
+}
+
+.item-3-right > img {
+  width: 130%;
+  margin-bottom: 0;
+  position: absolute;
+  bottom: 0;
+  left: -50px;
+}
+
+
+.section3-title {
+  margin: 0;
+}
+
+#section3-text {
+  align-self: start;
+}
+
+.btn {
+  width: 118px;
+  height: 34px;
+  border-radius: 16px;
+  
+}
+
+.section3-btn {
+  background-color: black;
+  margin-top: 22px;
+  margin-left: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.txt-btn {
+  color: white;
+  font-size: 18px;
+}
+
+.item-4 {
+  grid-area: footer;
+}
+
+
+/* footer */
+
+.footer-container {
+  height: 50dvh;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.references {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.references > p {
+  font-size: 10px;
+  text-align: left;
+}
+
+.footer-content {
+
+}
+
+.references-container {
+  height: 40dvh;
+  width: 75dvh;
+  background-color: white;
+  border-radius: 13px;
+}
+
+.content-container {
+  height: 40dvh;
+  width: 40dvh;
+  background-color: white;
+  border-radius: 13px;
+}
+
+.content-container > * {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.references-container {
+  overflow-y: auto;
+  padding: 12px 14px;
+}
+
+.references p {
+  font-size: 18px;
+}
+
+
+
+
+
